@@ -1,7 +1,6 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import styled from "styled-components";
-import foto1 from '../assets/img/foto1.jpg'
 import { sliderItems } from "../data";
 import { mobile } from "../responsive"; 
 
@@ -96,7 +95,7 @@ const Slider = () => {
             {sliderItems.map((item) => (
                 <Slide bg={item.bg} key={item.id}>
                     <ImgContainer>
-                    <Image src={foto1} />
+                      <Image src={item.img} />
                     </ImgContainer>
                     <InfoContainer>
                     <Title>{item.title}</Title>
