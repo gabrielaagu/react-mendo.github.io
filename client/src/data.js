@@ -13,7 +13,6 @@ export const sliderItems = [
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
       bg: "#EAEAEA",
-      color: "white",
     },
     {
       id: 2,
