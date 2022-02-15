@@ -5,6 +5,7 @@ import { sliderItems } from "../data.js";
 import { mobile } from "../responsive"; 
 
 const Container = styled.div`
+  margin-top: 1%;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -44,6 +45,7 @@ const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color:${props=>props.bg};
 `;
 const ImgContainer = styled.div`
@@ -54,17 +56,26 @@ const ImgContainer = styled.div`
   justify-content: center;
 `;
 const Image = styled.img`
-  height: 70%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 `;
 
 const InfoContainer = styled.div`
-  flex: 1;
-  padding: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items; center;  
+  justify-content: center;
+  padding: 1%;
 `;
 
 const Title = styled.h1`
-    font-size: 70px;
+    color: white;
+    font-size: 50px;
 `;
 
 const Desc = styled.p`
@@ -72,12 +83,14 @@ const Desc = styled.p`
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 3px;
+    color: white;
 `;
 const Button = styled.button`
-    padding: 10px;
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+    color: white;
+    width: 10vw;
 `;
 
 const Slider = () => {

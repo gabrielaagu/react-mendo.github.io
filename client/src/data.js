@@ -1,6 +1,10 @@
 import header1 from './assets/img/header1.jpg';
 import header2 from './assets/img/header2.jpg';
 import header3 from './assets/img/header3.jpg';
+import audrey1 from './assets/img/audrey1.webp';
+import lily1 from './assets/img/lily1.webp';
+import spencer1 from './assets/img/spencer1.webp';
+
 
 export const sliderItems = [
     {
@@ -8,41 +12,42 @@ export const sliderItems = [
       img: header1,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
-      bg: "f5fafd",
+      bg: "#EAEAEA",
+      color: "white",
     },
     {
       id: 2,
       img: header2,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
-      bg: "fcf1ed",
+      bg: "#EAEAEA",
     },
     {
       id: 3,
       img: header3,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
-      bg: "fbf0f4",
+      bg: "#EAEAEA",
     },
   ];
 
   export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
+      img: audrey1,
+      title: "Audrey",
       cat:"women"
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      img: lily1,
+      title: "Lily",
       cat:"coat"
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
+      img: spencer1,
+      title: "Spencer",
       cat:"jeans"
     },
   ];

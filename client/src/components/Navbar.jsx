@@ -44,7 +44,7 @@ const Center = styled.div`
 
 const Logo = styled.div`
   width: 15vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   
@@ -75,7 +75,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo><img src={logo}></img></Logo>
+          <Logo><img src={logo} style={{height:40}}></img></Logo>
         </Center>
         <Right>
           <MenuItem>REGISTRATE</MenuItem>
