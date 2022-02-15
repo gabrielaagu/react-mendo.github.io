@@ -1,21 +1,25 @@
+import header1 from './assets/img/header1.jpg';
+import header2 from './assets/img/header2.jpg';
+import header3 from './assets/img/header3.jpg';
+
 export const sliderItems = [
     {
       id: 1,
-      img: "./assets/img/header1.jpg",
+      img: header1,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: "./assets/img/header2.jpg",
+      img: header2,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
       bg: "fcf1ed",
     },
     {
       id: 3,
-      img: "./assets/img/header3.jpg",
+      img: header3,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
       bg: "fbf0f4",

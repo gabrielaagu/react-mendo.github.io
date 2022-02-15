@@ -42,8 +42,12 @@ const Center = styled.div`
   text-align: center;
 `;
 
-const Logo = styled.h1`
-  font-weigth: bold;
+const Logo = styled.div`
+  width: 15vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  
 `;
 
 const Right = styled.div`
@@ -71,11 +75,11 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <img src={logo}></img>
+          <Logo><img src={logo}></img></Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem>REGISTRATE</MenuItem>
+          <MenuItem>INICIA SESIÓN</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
