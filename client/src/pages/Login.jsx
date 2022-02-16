@@ -12,7 +12,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://cdn.shopify.com/s/files/1/0624/2294/1947/files/mw_750x.jpg?v=1644599597")
       center;
   background-size: cover;
   display: flex;
@@ -35,6 +35,7 @@ const Title = styled.h1`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
+  border-left: 1px solid $white;
 `;
 
 const Input = styled.input`
@@ -42,23 +43,25 @@ const Input = styled.input`
   min-width: 40%;
   margin: 10px 0;
   padding: 10px;
+  
 `;
 
 const Button = styled.button`
   width: 40%;
-  border: none;
+  border-radius: 5%;
   padding: 15px 20px;
-  background-color: teal;
+  background-color: #240E4F;
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
-  &:disabled {
-    color: green;
-    cursor: not-allowed;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #FDE1D5;
+    transform: scale(1.1);
   }
 `;
 
-const Link1 = styled.a`
+const MenuI = styled.a`
   margin: 5px 0px;
   font-size: 12px;
   text-decoration: underline;
@@ -97,8 +100,8 @@ const Login = () => {
             ACCESO
           </Button>
           {error && <Error>Algo salió mal...</Error>}
-          <Link to={"/"}>¿NO RECUERDAS LA CONTRASEÑA?</Link>
-          <Link>Crear una nueva cuenta</Link>
+          <MenuI><Link to="/">¿NO RECUERDAS LA CONTRASEÑA?</Link></MenuI>
+          <MenuI><Link to="/">Crear una nueva cuenta</Link></MenuI>
         </Form>
       </Wrapper>
     </Container>
