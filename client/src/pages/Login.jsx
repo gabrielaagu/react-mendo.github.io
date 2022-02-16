@@ -81,7 +81,7 @@ const Login = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>SIGN IN</Title>
+        <Title>INICIAR SECCIÓN</Title>
         <Form>
           <Input
             placeholder="username"
@@ -93,11 +93,11 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button onClick={handleClick} disabled={isFetching}>
-            LOGIN
+            ACCESO
           </Button>
-          {error && <Error>Something went wrong...</Error>}
-          <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          {error && <Error>Algo salió mal...</Error>}
+          <Link>¿NO RECUERDAS LA CONTRASEÑA?</Link>
+          <Link>Crear una nueva cuenta</Link>
         </Form>
       </Wrapper>
     </Container>

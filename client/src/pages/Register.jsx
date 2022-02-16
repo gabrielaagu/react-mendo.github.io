@@ -58,19 +58,18 @@ const Register = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>CREATE AN ACCOUNT</Title>
+        <Title>CREA UNA CUENTA</Title>
         <Form>
-          <Input placeholder="name" />
-          <Input placeholder="last name" />
-          <Input placeholder="username" />
-          <Input placeholder="email" />
-          <Input placeholder="password" />
-          <Input placeholder="confirm password" />
+          <Input placeholder="Nombre" />
+          <Input placeholder="Apellidos" />
+          <Input placeholder="Email" />
+          <Input placeholder="Contraseña" />
+          <Input placeholder="Confirmar contraseña" />
           <Agreement>
-            By creating an account, I consent to the processing of my personal
-            data in accordance with the <b>PRIVACY POLICY</b>
+          Al crear una cuenta, doy mi consentimiento para el procesamiento de mis datos personales.
+             datos de acuerdo con la <b>POLÍTICA DE PRIVACIDAD</b>
           </Agreement>
-          <Button>CREATE</Button>
+          <Button>CREAR</Button>
         </Form>
       </Wrapper>
     </Container>

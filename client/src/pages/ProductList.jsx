@@ -59,18 +59,16 @@ const ProductList = () => {
       <Title>{cat}</Title>
       <FilterContainer>
         <Filter>
-          <FilterText>Filter Products:</FilterText>
+          <FilterText>Filtrar:</FilterText>
           <Select name="color" onChange={handleFilters}>
-            <Option disabled>Color</Option>
-            <Option>white</Option>
-            <Option>black</Option>
-            <Option>red</Option>
-            <Option>blue</Option>
-            <Option>yellow</Option>
-            <Option>green</Option>
+            <Option disabled>Disponibilidad</Option>
+            <Option>Disponibilidad</Option>
+            <Option>En existencia</Option>
+            <Option>Agotado</Option>
           </Select>
           <Select name="size" onChange={handleFilters}>
-            <Option disabled>Size</Option>
+            <Option disabled>Talla</Option>
+            <Option>Talla</Option>
             <Option>XS</Option>
             <Option>S</Option>
             <Option>M</Option>
@@ -79,11 +77,11 @@ const ProductList = () => {
           </Select>
         </Filter>
         <Filter>
-          <FilterText>Sort Products:</FilterText>
+          <FilterText>Ordenar por:</FilterText>
           <Select onChange={(e) => setSort(e.target.value)}>
-            <Option value="newest">Newest</Option>
-            <Option value="asc">Price (asc)</Option>
-            <Option value="desc">Price (desc)</Option>
+            <Option value="newest">Más vendidos</Option>
+            <Option value="asc">Precio, menor a mayor</Option>
+            <Option value="desc">Precio, mayor a menor</Option>
           </Select>
         </Filter>
       </FilterContainer>
