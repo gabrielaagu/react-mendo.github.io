@@ -87,10 +87,13 @@ const Desc = styled.p`
 `;
 const Button = styled.button`
     font-size: 20px;
-    background-color: transparent;
+    background-color: #FA9370;
     cursor: pointer;
     color: white;
     width: 10vw;
+    border: #FA9370;
+    border-radius: 8px;
+    height: 6vh;
 `;
 
 const Slider = () => {

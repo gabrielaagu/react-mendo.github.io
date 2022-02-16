@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
 `;
 
@@ -33,12 +33,13 @@ const Top = styled.div`
 
 const TopButton = styled.button`
   padding: 10px;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
-  border: ${(props) => props.type === "filled" && "none"};
-  background-color: ${(props) =>
-    props.type === "filled" ? "black" : "transparent"};
-  color: ${(props) => props.type === "filled" && "white"};
+  background-color: #FA9370;
+  color: #240e4f;
+  border-radius: 8px;
+  border: #FA9370;
+  height: 7vh;
 `;
 
 const TopTexts = styled.div`
@@ -154,9 +155,10 @@ const SummaryItemPrice = styled.span``;
 const Button = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: black;
-  color: white;
-  font-weight: 600;
+  background-color: #fa9370;
+  border: #fa9370;
+  border-radius: 8px;
+  color: #1B1B1B;
 `;
 
 const Cart = () => {
@@ -189,7 +191,7 @@ const Cart = () => {
       <Wrapper>
         <Title>Tu lista</Title>
         <Top>
-          <TopButton>Continuar comprando</TopButton>
+          <TopButton>CONTINUAR COMPRANDO</TopButton>
           <TopTexts>
             <TopText>Bolsa de la compra(2)</TopText>
             <TopText>Tu lista de deseos (0)</TopText>
@@ -204,14 +206,14 @@ const Cart = () => {
                   <Image src={product.img} />
                   <Details>
                     <ProductName>
-                      <b>Product:</b> {product.title}
+                      <b>Vestido:</b> {product.title}
                     </ProductName>
                     <ProductId>
                       <b>ID:</b> {product._id}
                     </ProductId>
                     <ProductColor color={product.color} />
                     <ProductSize>
-                      <b>Size:</b> {product.size}
+                      <b>Talla:</b> {product.size}
                     </ProductSize>
                   </Details>
                 </ProductDetail>
@@ -230,7 +232,7 @@ const Cart = () => {
             <Hr />
           </Info>
           <Summary>
-            <SummaryTitle>RESUMEN DEL PEDIDO</SummaryTitle>
+            <SummaryTitle>Resumen del pedido:</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
               <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>

@@ -8,7 +8,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://cdn.pixabay.com/photo/2016/11/21/16/08/tying-hair-1846171_960_720.jpg")
       center;
   background-size: cover;
   display: flex;
@@ -20,12 +20,22 @@ const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: white;
+  border-radius: 10px;
   ${mobile({ width: "75%" })}
 `;
 
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
+`;
+
+const Volver = styled.h1`
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+  color: #240e4f;
+  background-color: #EAEAEA;
+  padding-left:1vw;
 `;
 
 const Form = styled.form`
@@ -49,30 +59,37 @@ const Button = styled.button`
   width: 40%;
   border: none;
   padding: 15px 20px;
-  background-color: teal;
+  background-color: #240e4f;
   color: white;
   cursor: pointer;
+  border-radius: 10px;
 `;
 
 const Register = () => {
   return (
-    <Container>
-      <Wrapper>
-        <Title>CREA UNA CUENTA</Title>
-        <Form>
-          <Input placeholder="Nombre" />
-          <Input placeholder="Apellidos" />
-          <Input placeholder="Email" />
-          <Input placeholder="Contraseña" />
-          <Input placeholder="Confirmar contraseña" />
-          <Agreement>
-          Al crear una cuenta, doy mi consentimiento para el procesamiento de mis datos personales.
-             datos de acuerdo con la <b>POLÍTICA DE PRIVACIDAD</b>
-          </Agreement>
-          <Button>CREAR</Button>
-        </Form>
-      </Wrapper>
-    </Container>
+    <>
+      <Volver>
+        <Title>Volver al home</Title>
+      </Volver>
+      <Container>
+        <Wrapper>
+          <Title>REGISTRATE</Title>
+          <Form>
+            <Input placeholder="Nombre" />
+            <Input placeholder="Apellidos" />
+            <Input placeholder="Email" />
+            <Input placeholder="Contraseña" />
+            <Input placeholder="Confirmar contraseña" />
+            <Agreement>
+              Al crear una cuenta, doy mi consentimiento para el procesamiento
+              de mis datos personales. datos de acuerdo con la{" "}
+              <b>POLÍTICA DE PRIVACIDAD</b>
+            </Agreement>
+            <Button>CREAR</Button>
+          </Form>
+        </Wrapper>
+      </Container>
+    </>
   );
 };
 
