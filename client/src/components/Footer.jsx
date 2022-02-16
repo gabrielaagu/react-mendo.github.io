@@ -30,7 +30,6 @@ const Logo = styled.h1`
   
 `;
 
-
 const SocialContainer = styled.div`
   display: flex;
 `;
@@ -128,8 +127,8 @@ const Footer = () => {
           <ListItem>INICIO</ListItem>
           <ListItem>CATÁLOGO</ListItem> 
           <ListItem>CONÓCENOS</ListItem>
-          <ListItem>PIDE CITA</ListItem>
-           <ListItem>MI CUENTA</ListItem>
+           <ListItem>PIDE CITA</ListItem>
+           <ListItem>BLOG</ListItem>
         </List>
       </Center>
     </Container>
