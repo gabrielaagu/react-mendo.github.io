@@ -38,9 +38,10 @@ const Button = styled.button`
     border:none;
     padding: 10px;
     background-color: #FDE1D5;
-    color:gray;
+    color:#240E4F;
     cursor: pointer;
     font-weight: 600;
+    border-radius: 10px;
 `;
 
 const CategoryItem = ({ item }) => {

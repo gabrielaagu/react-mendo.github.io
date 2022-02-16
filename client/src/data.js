@@ -4,6 +4,15 @@ import header3 from './assets/img/header3.jpg';
 import audrey1 from './assets/img/audrey1.webp';
 import lily1 from './assets/img/lily1.webp';
 import spencer1 from './assets/img/spencer1.webp';
+import dospiezas1 from './assets/img/02. SECOND DRESS/DOS PIEZAS/LOOK 1/dospiezas.1.webp'
+import mono1 from './assets/img/02. SECOND DRESS/MONO/LOOK 1  SI/mono1.png'
+import vestido1 from './assets/img/02. SECOND DRESS/VESTIDOS/LOOK 1/vestido1.jpg'
+import dama1 from './assets/img/03. VESTIDOS DE INVITADAS/DAMAS DE HONOR/LOOK 1/dama1.webp'
+import fiesta1 from './assets/img/03. VESTIDOS DE INVITADAS/FIESTA/LOOK 1/fiesta1.jpg'
+import madrina1 from './assets/img/03. VESTIDOS DE INVITADAS/MADRINA/LOOK 1 (NO)/madrina1.png'
+import second1 from './assets/img/04. SELECCIÓN KIMBERLY/4. SECOND DRESS/second1.jpg'
+import second2 from './assets/img/04. SELECCIÓN KIMBERLY/4. SECOND DRESS/second2.jpg'
+
 
 
 export const sliderItems = [
@@ -12,21 +21,18 @@ export const sliderItems = [
       img: header1,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
-      bg: "#EAEAEA",
     },
     {
       id: 2,
       img: header2,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
-      bg: "#EAEAEA",
     },
     {
       id: 3,
       img: header3,
       title: "Diseñamos a medida el vestido de tus sueños",
       desc: "Vestidos personalizados en menos de un mes",
-      bg: "#EAEAEA",
     },
   ];
 
@@ -54,34 +60,34 @@ export const sliderItems = [
   export const popularProducts = [
     {
       id:1,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+      img: dospiezas1,
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img: mono1,
     },
     {
       id:3,
-      img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+      img: vestido1,
     },
     {
       id:4,
-      img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+      img: dama1,
     },
     {
       id:5,
-      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+      img: fiesta1,
     },
     {
       id:6,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+      img:madrina1,
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img: second1,
     },
     {
       id:8,
-      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+      img: second2,
     },
   ]
