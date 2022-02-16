@@ -126,9 +126,9 @@ const Footer = () => {
       <Title>#WearYourDream</Title>
         <List>
           <ListItem>INICIO</ListItem>
-          <ListItem>CATÁLOGO</ListItem>
-          <ListItem>MI CUENTA</ListItem>
+          <ListItem>CATÁLOGO</ListItem> 
           <ListItem>CONÓCENOS</ListItem>
+          <ListItem>PIDE CITA</ListItem>
            <ListItem>MI CUENTA</ListItem>
         </List>
       </Center>
