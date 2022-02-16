@@ -47,7 +47,7 @@ const Button = styled.button`
 `;
 
 const Newsletter = () => {
-  return (
+  return ( 
     <Container>
       <Title>Newsletter</Title>
       <Desc>Suscribete para que te lleguen nuestras ultimas noticias de tus productos favoritos.</Desc>

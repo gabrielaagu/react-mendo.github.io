@@ -3,6 +3,7 @@ import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import logo from '../assets/img/logo.svg'
+import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
@@ -39,7 +40,9 @@ const Input = styled.input`
 
 const Center = styled.div`
   flex: 1;
+  display: flex;
   text-align: center;
+  justify-content: center;
 `;
 
 const Logo = styled.div`
@@ -64,6 +67,7 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
+
   return (
     <Container>
       <Wrapper>
@@ -75,11 +79,11 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo><img src={logo} style={{height:40}}></img></Logo>
+          <Logo><img src={logo} style={{height:40, width:300}}></img></Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTRATE</MenuItem>
-          <MenuItem>INICIA SESIÓN</MenuItem>
+          <MenuItem><Link to="/register">REGISTRATE</Link></MenuItem>
+          <MenuItem><Link to="/login">INICIA SESIÓN</Link></MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
