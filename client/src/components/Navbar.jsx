@@ -64,6 +64,8 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+  color: #FA9370 !important;
+  text-decoration: none !important;
 `;
 
 const Navbar = () => {
@@ -85,8 +87,9 @@ const Navbar = () => {
           <MenuItem><Link to="/register">REGISTRATE</Link></MenuItem>
           <MenuItem><Link to="/login">INICIA SESIÓN</Link></MenuItem>
           <MenuItem>
+            <Link to="/cart"></Link>
             <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
+              <ShoppingCartOutlined></ShoppingCartOutlined>
             </Badge>
           </MenuItem>
         </Right>
