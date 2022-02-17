@@ -9,6 +9,8 @@ import { red } from "@material-ui/core/colors";
 
 const Container = styled.div`
   height: 60px;
+  color: #FA9370;
+  font-weight: 600;
 `;
 const Wrapper = styled.div`
   padding: 10px 20px;
