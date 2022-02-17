@@ -113,14 +113,14 @@ const Login = () => {
     <Container>
       <Wrapper>
       <MenuItem><Link to="/">INICIO</Link></MenuItem>
-        <Title>INICIAR SECCIÓN</Title>
+        <Title>INICIAR SESIÓN</Title>
         <Form>
           <Input
-            placeholder="username"
+            placeholder="usuario"
             onChange={(e) => setUsername(e.target.value)}
           />
           <Input
-            placeholder="password"
+            placeholder="Ccontraseña"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
