@@ -41,19 +41,19 @@ export const sliderItems = [
       id: 1,
       img: audrey1,
       title: "Audrey",
-      cat:"women"
+      cat:"• VESTIDOS DE NOVIA - Audrey"
     },
     {
       id: 2,
       img: lily1,
       title: "Lily",
-      cat:"coat"
+      cat:"• VESTIDOS DE NOVIA - Lily"
     },
     {
       id: 3,
       img: spencer1,
       title: "Spencer",
-      cat:"jeans"
+      cat:"• VESTIDOS DE NOVIA - Spencer"
     },
   ];
 
