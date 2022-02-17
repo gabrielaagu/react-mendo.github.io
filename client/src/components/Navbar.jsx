@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import logo from '../assets/img/logo.svg'
 import { Link } from 'react-router-dom';
+import { red } from "@material-ui/core/colors";
 
 
 const Container = styled.div`
@@ -64,8 +65,14 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
-  color: #FA9370 !important;
-  text-decoration: none !important;
+`;
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
 `;
 
 const Navbar = () => {
@@ -84,7 +91,7 @@ const Navbar = () => {
           <Logo><img src={logo} style={{height:40, width:300}}></img></Logo>
         </Center>
         <Right>
-          <MenuItem><Link to="/register">REGISTRATE</Link></MenuItem>
+          <MenuItem><Link to="/register" style={{color:red}}>REGISTRATE</Link></MenuItem>
           <MenuItem><Link to="/login">INICIA SESIÓN</Link></MenuItem>
           <MenuItem>
             <Link to="/cart"></Link>

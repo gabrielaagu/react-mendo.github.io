@@ -21,18 +21,21 @@ export const sliderItems = [
     img: header1,
     title: "Diseñamos a medida el vestido de tus sueños",
     desc: "Vestidos personalizados en menos de un mes",
+    bg: "f5fafd",
   },
   {
     id: 2,
     img: header2,
     title: "Diseñamos a medida el vestido de tus sueños",
     desc: "Vestidos personalizados en menos de un mes",
+    bg: "fcf1ed",
   },
   {
     id: 3,
     img: header3,
     title: "Diseñamos a medida el vestido de tus sueños",
     desc: "Vestidos personalizados en menos de un mes",
+    bg: "fbf0f4",
   },
 ];
 

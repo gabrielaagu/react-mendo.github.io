@@ -56,6 +56,7 @@ const ImgContainer = styled.div`
   justify-content: center;
 `;
 const Image = styled.img`
+  margin-top: 20px;
   height: 100%;
   width: 100%;
 `;
@@ -75,7 +76,8 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
     color: white;
-    font-size: 50px;
+    font-size: 40px;
+    padding-right: 20vw;
 `;
 
 const Desc = styled.p`
@@ -113,7 +115,7 @@ const Slider = () => {
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
             {sliderItems.map((item) => (
-                <Slide key={item.id}>
+                <Slide bg={item.bg} key={item.id}>
                     <ImgContainer>
                       <Image src={item.img} />
                     </ImgContainer>
