@@ -10,7 +10,7 @@ const Container = styled.div`
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 255, 255, 0.6)
     ),
     url("https://cdn.shopify.com/s/files/1/0624/2294/1947/files/mw_750x.jpg?v=1644599597")
       center;
@@ -21,39 +21,66 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
+  background: $white;
   width: 25%;
   padding: 20px;
-  background-color: white;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 2px solid $white;
+  border-top: 1px solid $white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
   ${mobile({ width: "75%" })}
 `;
 
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   border-left: 1px solid $white;
+  
+  
 `;
+
+const MenuItem = styled.h1`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+  color: #FA9370 !important;
+  flex: 1;
+  display: flex;
+  align-items: flex;
+  justify-content: flex-end;
+  `;
 
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
   margin: 10px 0;
   padding: 10px;
+  &:focus {
+        box-shadow: 3px 3px 10px   rgb(253, 225, 225);
+      }
   
 `;
 
 const Button = styled.button`
   width: 40%;
-  border-radius: 5%;
+  border: none;
   padding: 15px 20px;
-  background-color: #240E4F;
+  background-color: #240E4f;
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
+  border-radius: 5%;
   transition: all 0.5s ease;
   &:hover {
     background-color: #FDE1D5;
@@ -85,6 +112,7 @@ const Login = () => {
   return (
     <Container>
       <Wrapper>
+      <MenuItem><Link to="/">INICIO</Link></MenuItem>
         <Title>INICIAR SECCIÓN</Title>
         <Form>
           <Input
