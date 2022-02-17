@@ -56,7 +56,6 @@ const ImgContainer = styled.div`
   justify-content: center;
 `;
 const Image = styled.img`
-  margin-top: 20px;
   height: 100%;
   width: 100%;
 `;

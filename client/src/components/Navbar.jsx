@@ -11,6 +11,13 @@ const Container = styled.div`
   height: 60px;
   color: #FA9370;
   font-weight: 600;
+  position: relative; 
+  position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  background-color: white;
+  padding-bottom: 1%;
+  z-index: 4;
 `;
 const Wrapper = styled.div`
   padding: 10px 20px;
