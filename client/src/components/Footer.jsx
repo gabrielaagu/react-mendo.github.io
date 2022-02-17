@@ -7,7 +7,7 @@ import {
 } from "@material-ui/icons";
 import styled from "styled-components";
 import logo from '../assets/img/logo.svg'
-import { Link } from "react-router-dom";
+
 import { mobile } from "../responsive";
 
 const Container = styled.div`
@@ -103,21 +103,26 @@ const Footer = () => {
         <Logo><img src={logo} style={{height:60}}></img></Logo>
         
         <SocialContainer>
-          <SocialIcon src="https://www.facebook.com/MendoWeddings.es">
-            <Facebook />
-          </SocialIcon>
           <SocialIcon>
-            <Instagram />
+            <a target='_blank' href={"https://www.facebook.com/MendoWeddings.es"}><Facebook /></a>
           </SocialIcon>
+
           <SocialIcon>
-            <Twitter />
+          <a target='_blank' href={"https://www.instagram.com/mendoweddings.es"}><Instagram /></a>
           </SocialIcon>
+
+          <SocialIcon>
+            <a target='_blank' href={"https://twitter.com/MendoWeddingsES"}><Twitter /></a>
+          </SocialIcon>
+
           <SocialIcon >
-            <YouTube />
+            <a target='_blank' href={"https://www.youtube.com/channel/UCqSecgYQNDT4xmw3ozFEeUw"}><YouTube /></a>
           </SocialIcon>
+
           <SocialIcon>
-            <Pinterest />
+            <a target='_blank' href={"https://www.pinterest.es/FASREV_es"}><Pinterest /></a>
           </SocialIcon>
+
         </SocialContainer>
       </Left>
       <Center>
